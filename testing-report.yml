@@ -64,6 +64,10 @@
   status: pass
 
 - summary: |
+    Оформление заказа
+  status: pass
+
+- summary: |
     Возможность продолжить покупки после просмотра корзины
   status: pass
 
