@@ -1,5 +1,17 @@
 ---
 - summary: |
+    Отсутствие рейтинга в отображении товара в каталоге
+  environment: |
+    Google Chrome MacOS 14.4.1 (23E224)
+  steps-to-reproduce: |
+    - Открываем главную страницу https://hexlet-products-store.vercel.app
+    - Выбрать любой товар на странице
+  expected-result: |
+    Выбранный товар в каталоге должен отобразиться с названием, рейтингом и ценой со скидкой и без
+  actual-result: |
+    Отсутствие рейтинга
+
+- summary: |
     Невозможно увеличить изображение на страницу товара
   environment: |
     Google Chrome MacOS 14.4.1 (23E224)
