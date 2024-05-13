@@ -12,7 +12,7 @@
     Отсутствие рейтинга
 
 - summary: |
-    Невозможно увеличить изображение на страницу товара
+    Невозможно увеличить изображение на странице товара
   environment: |
     Google Chrome MacOS 14.4.1 (23E224)
   steps-to-reproduce: |
@@ -21,6 +21,19 @@
     - Нажать на одну из уменьшенных фотографий товара
   expected-result: |
     Выбранная фотография должна увеличиться
+  actual-result: |
+    Ничего не происходит
+
+- summary: |
+    При нажатии на хэштег ничего не происходит
+  environment: |
+    Google Chrome MacOS 14.4.1 (23E224)
+  steps-to-reproduce: |
+    - Открываем главную страницу https://hexlet-products-store.vercel.app
+    - Нажать на товар "iPhone 9"
+    - Нажать на "#smartphones"
+  expected-result: |
+    Пользователь переходит в категорию товаров "smartphones"
   actual-result: |
     Ничего не происходит
 
