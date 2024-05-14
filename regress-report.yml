@@ -49,6 +49,10 @@ test-cases:
     status: pass
 
   - summary: |
+      Отображение товара в каталоге
+    status: fail
+
+  - summary: |
       Просмотр полной информации о товаре
     status: pass
 
@@ -56,8 +60,8 @@ test-cases:
       Просмотр фотографий товара
     status: pass
 
-- summary: |
-      Переход в катагорию товаров по хэштегу со страницы товара
+  - summary: |
+      Переход в категорию товаров по хэштегу со страницы товара
     status: pass
 
   - summary: |
@@ -68,11 +72,11 @@ test-cases:
       Добавление товара в корзину со страницы с полной информацией о товаре
     status: pass
 
-- summary: |
+  - summary: |
       Добавление нескольких одинаковых товаров в корзину
     status: pass
 
-- summary: |
+  - summary: |
       Добавление нескольких разных товаров в корзину
     status: pass
 
@@ -92,11 +96,11 @@ test-cases:
       Оформление заказа
     status: pass
 
-- summary: |
+  - summary: |
       Переход на страницу оплаты при оформлении заказа
     status: fail
 
-- summary: |
+  - summary: |
       Закрытие окна заказа с помощью кнопки "Закрыть"
     status: pass
 
@@ -136,7 +140,7 @@ test-cases:
       Открытие сайта на мобильном устройстве
     status: pass
     
-- summary: |
+  - summary: |
       Загрузка сайта происходит без ошибок
     status: pass
 
