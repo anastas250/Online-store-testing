@@ -1,5 +1,17 @@
 ---
 - summary: |
+    Ценовой фильтр фильтрует товар не учитывая скидку
+  environment: |
+    Google Chrome MacOS 14.4.1 (23E224)
+  steps-to-reproduce: |
+    - Открываем главную страницу https://hexlet-products-store.vercel.app
+    - Вводим значение "250" в окно "От"
+  expected-result: |
+    На странице отображается товар с ценой со скидкой от 250
+  actual-result: |
+    На странице отобразился товар с ценой со скидкой за 229
+
+- summary: |
     Отсутствие рейтинга в отображении товара в каталоге
   environment: |
     Google Chrome MacOS 14.4.1 (23E224)
@@ -65,6 +77,31 @@
     Окно заказа закрывается
   actual-result: |
     Ничего не происходит
+
+- summary: |
+    При перемотке каталога вперед меняются категории и бренды
+  environment: |
+    Google Chrome MacOS 14.4.1 (23E224)
+  steps-to-reproduce: |
+    - Открываем главную страницу https://hexlet-products-store.vercel.app
+    - Нажимаем кнопку "вперед"
+  expected-result: |
+    На странице отображается товары, категории и бренды не меняются
+  actual-result: |
+    На странице отображаются товары, категории и бренды изменились
+
+- summary: |
+    У кнопки "English" отсутствует иконка с английским флагом
+  environment: |
+    Google Chrome MacOS 14.4.1 (23E224)
+  steps-to-reproduce: |
+    - Открываем главную страницу https://hexlet-products-store.vercel.app
+    - Нажимаем кнупку "Язык"
+    - Выбираем "English"
+  expected-result: |
+    Возле наименования языка стоит иконка с английским флагом
+  actual-result: |
+    Иконка английского флага не загружается
 
 - summary: |
     Не полная смена интерфейса на русский язык
