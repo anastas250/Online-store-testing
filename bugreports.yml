@@ -150,7 +150,7 @@
     Сайт адаптируется под мобильное устройство, но становится неудобным в использовании (фильтрация товаров сужена и находится над самими товарами, текст кнопки "Оформить заказ" не виден полностью, текст выходит за рамки экрана)
 
 - summary: |
-    DevTools выдает ошибки
+    DevTools выдает ошибки при загрузке сайта
   environment: |
     Google Chrome MacOS 14.4.1 (23E224)
   steps-to-reproduce: |
@@ -162,3 +162,18 @@
     В DevTools нет ошибок
   actual-result: |
     DevTools выдает две ошибки "random.css" и "author.js"
+
+- summary: |
+    DevTools выдает ошибку при оформлении заказа
+  environment: |
+    Google Chrome MacOS 14.4.1 (23E224)
+  steps-to-reproduce: |
+    - Открываем главную страницу https://hexlet-products-store.vercel.app
+    - Открываем DevTools
+    - Выбираем "Сеть"
+    - Добавляем в корзину товар
+    - Нажимаем кнопку "Оформить заказ"
+  expected-result: |
+    В DevTools нет ошибок
+  actual-result: |
+    DevTools выдает ошибку "failed"
