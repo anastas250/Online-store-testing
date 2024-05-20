@@ -176,4 +176,4 @@
   expected-result: |
     В DevTools нет ошибок
   actual-result: |
-    DevTools выдает ошибку "failed"
+    DevTools выдает ошибку "500 Internal Server Error"
