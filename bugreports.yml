@@ -176,4 +176,4 @@
   expected-result: |
     В DevTools нет ошибок
   actual-result: |
-    DevTools выдает ошибку "500 Internal Server Error"
+    Запрос при оформлении заказа https://dummyjson.com/http/500/failed выдает ошибку 500 Internal Server Error. тело ответа: {"status":"500","title":"failed","type":"about:blank","detail":"failed","message":"failed"}
